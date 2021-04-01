@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevBus</title>
+</head>
+
+<body>
+    <div class="all">
+        <img class="logo" src="logo.png">
+        <h1>
+            Software Development
+            marvinsenkiv@gmail.com
+            (41)99112-3177
+
+        </h1>
+        <div class="mock">
+            <script>
+                var div = document.getElementById('fotos');
+                function typeWriter(elemento) {
+                    const textoArray = elemento.innerHTML.split('');
+                    elemento.innerHTML = '';
+                    textoArray.forEach((letra, i) => {
+                        setTimeout(() => elemento.innerHTML += letra, 75 * i);
+                    });
+                }
+            
+
+
+                const titulo = document.querySelector('h1');
+                typeWriter(titulo);
+            </script>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

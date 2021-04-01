@@ -1,0 +1,46 @@
+html{
+    background-color: #404041;
+}
+.all{
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.logo{
+  width: 25vh;
+}
+h1 {
+    max-width: 480px;
+    text-align: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+  }
+
+  h1::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  .fotos{
+      margin-top: 10px;
+      display: flex;
+
+  }
+  .fotos img{
+      width: 25vw;
+  }
